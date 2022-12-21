@@ -6,4 +6,20 @@ Welcome and first, apologies, when reading this you may be looking for a complet
 >
 > *Having an endpoint where we can call GPT-2 [^GPTAPISource] we are looking to get the predictions or suggestions from GPT-2's language model to suggest our next set of words in the Obsidian note. What we lack is the UI to match the API end-point, while other plugins provide "complements" or "autocompletion" they lack the back-end processing available with GPT-2.*
 
-[^GPTAPISource]: We have enabled, with the help of ChatGPT, the endpoint by writing a Python app to suggest text based on the GPT-2 model from OpenAI. The exercise was to both create a self-hosted endpoint but to test out the "programming" capabilites of ChatGPT. It was a success. We are running GPT-2 via the Hugging Face Transformers library and then making results available via a REST API by using FastAPI to expose the method. This has been tested in both a Telegram 'chatbot' and by leveraging the API in Node Red to create a UI to enter text and see predictions in near-real-time. This project looks to simply call the API, provide suggestions for 'tab completion' (or another hotkey) in Obsidian.md depending on whatever craziness GPT-2 comes up with! That code is pretty elementary and likewise not super clean as it was primarily written by a bot, though with interest I would publish to GitHub. Otherwise both that and this are mainly personal "wouldn't it be cool if..." projects and potentially not super useful. GPT-3, a better model, is accessible today via an API call and another plugin in Obsidian if a user want's valuable results.
+## Project Log
+
+*This will be split into it's own file later, tracking the build status as we go at a high-level as there may be (i.e. will be) times when life is more important than messing around with code we intend to learn from messing with.*
+
+- 2022-12-20
+  - Setup root of project, GitHub mirror
+  - Had a short chat session with ChatGPT to get *advice* on where to start (result: learn the Obsidian API, which seems fair)
+- 2022-12-21
+  - Revisiting plan, updating related files outside of project folder (i.e. notes, backups)
+  - Installed newer plugins/updated plugins that offer similar types of functionality to dive into their methods. Key updates/new plugins worth mentioning:
+    - **Obsidian Ava**: Promises to be your all-in-one AI assistant for Obsidian. Taps into GPT-3 from OpenAI directly (all models). Has other features including a FastAPI enabled 'semantic search' server (which didn't work for me due to a TensorFlow error despite installing requirements).
+    - **Completr**: Newer 'autocomplete' solution as the original plugin is no longer maintained and its author points to Completr
+  - [Revisiting Obsidian API documentation](https://github.com/obsidianmd/obsidian-api)
+    - *Competing priorities for the day mean this may remain incomplete, meant as a refresher and not a true deep-dive*
+    - *Needed: Early decision on the best mechanism(s) to perform the 'type ahead' suggestions, hotkey enabled, based on a paused cursor, command pallet, etc.*
+
+[^GPTAPISource]: We have enabled, with the help of ChatGPT, the endpoint by writing a Python app to suggest text based on the GPT-2 model from OpenAI. The exercise was to both create a self-hosted endpoint but to test out the "programming" capabilities of ChatGPT. It was a success. We are running GPT-2 via the Hugging Face Transformers library and then making results available via a REST API by using FastAPI to expose the method. This has been tested in both a Telegram 'chatbot' and by leveraging the API in Node Red to create a UI to enter text and see predictions in near-real-time. This project looks to simply call the API, provide suggestions for 'tab completion' (or another hotkey) in Obsidian.md depending on whatever craziness GPT-2 comes up with! That code is pretty elementary and likewise not super clean as it was primarily written by a bot, though with interest I would publish to GitHub. Otherwise both that and this are mainly personal "wouldn't it be cool if..." projects and potentially not super useful. GPT-3, a better model, is accessible today via an API call and another plugin in Obsidian if a user want's valuable results.
