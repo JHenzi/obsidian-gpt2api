@@ -1,4 +1,4 @@
-##_Project Status: **On Hold/Research (2023-01-11)**_
+## _Project Status: **On Hold/Research (2023-01-11)**_
 
 ## GPT-2 Autocompletion for Obsidian.md via API
 
