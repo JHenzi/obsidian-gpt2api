@@ -1,4 +1,6 @@
-# GPT-2 Autocompletion for Obsidian.md via API
+##_Project Status: **On Hold/Research (2023-01-11)**_
+
+## GPT-2 Autocompletion for Obsidian.md via API
 
 Welcome and first, apologies, when reading this you may be looking for a completed and running plugin, however this is currently a work in progress.
 
@@ -27,5 +29,13 @@ Welcome and first, apologies, when reading this you may be looking for a complet
   - *Note, the BLOOM enabled endpoint is not designed, necessarily, for this body of work and is only tangentially related!*
   - *Usage of BLOOM is more aligned to our 'Task Enhancer' project that hasn't yet been posted here on GitHub*
   - **No work on this project will take place on 2022-12-27, focus is needed elsewhere**
+- 2023-01-11
+  - Check-In: I've **not** spent any more time on the UI portion of the project, in fact not spending as much time Obsidian.md as typical.
+  - Released, instead **The Henzi NLP Playground**, which is currently hosted @ [PiVPN.XYZ](https://pivpn.xyz)
+    - Eventually the NLP Playground's backend, running FastAPI, the BLOOM language model will be pushed to Github
+    - The React-driven front end will also be published when the source includes some missed features (Routing and/or Hash Routing to start)
+  - Having seen results from GPT-2, BLOOM and others I'm not terribly convinced they are powerful tools for note taking.
+    - Being said, one thought might be to enable an API, open the code (common backend for the app mentioned above) but have this work with an existing auto-complete tool for Obsidian, one which simply needs another source of completion suggestions. As I test those solutions in the application I am leaning towards one but will save mentioning the contender as I have negative tests to perform.
+ 
 
 [^GPTAPISource]: We have enabled, with the help of ChatGPT, the endpoint by writing a Python app to suggest text based on the GPT-2 model from OpenAI. The exercise was to both create a self-hosted endpoint but to test out the "programming" capabilities of ChatGPT. It was a success. We are running GPT-2 via the Hugging Face Transformers library and then making results available via a REST API by using FastAPI to expose the method. This has been tested in both a Telegram 'chatbot' and by leveraging the API in Node Red to create a UI to enter text and see predictions in near-real-time. This project looks to simply call the API, provide suggestions for 'tab completion' (or another hotkey) in Obsidian.md depending on whatever craziness GPT-2 comes up with! That code is pretty elementary and likewise not super clean as it was primarily written by a bot, though with interest I would publish to GitHub. Otherwise both that and this are mainly personal "wouldn't it be cool if..." projects and potentially not super useful. GPT-3, a better model, is accessible today via an API call and another plugin in Obsidian if a user want's valuable results.
