@@ -1,5 +1,9 @@
 ## _Project Status: **On Hold/Research (2023-01-11)**_
 
+## _Project Status: **On Hold/Canceled (2023-02-21)**_
+
+*As of Feb 21st 2023 there is less interest here than before. The time/effort for personal projects went into the [BLOOM Story Generator](https://nlp.henzi.org) that uses a larger language model to generate stories and text based on prompts and CNN-sourced headlines. With the rise of ChatGPT's ability to teach Python I was able to get that up and running much faster sadly. For now I consider this canceled as there are competing projects that are calling GPT-3 and this was hardly "needed" by anyone. I am however still interested in this topic, I am just using Obsidian as often either, so focusing on other hobby projects in the AI arena and other Pythonesque work for now.*
+
 ## GPT-2 Autocompletion for Obsidian.md via API
 
 Welcome and first, apologies, when reading this you may be looking for a completed and running plugin, however this is currently a work in progress.
